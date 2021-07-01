@@ -11,6 +11,8 @@ export const errorHandler = (
     return res.status(err.statusCode).send({ errors: err.serializedErrors() })
   }
 
+  console.log(err)
+
   res.status(400).send({
     errors: [{message: 'Oh no ERROR, and I have no glue why ?!?'}]
   })
