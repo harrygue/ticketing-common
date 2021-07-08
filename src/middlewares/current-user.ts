@@ -1,6 +1,5 @@
 import  { Request,Response, NextFunction } from 'express'
 import jwt from 'jsonwebtoken'
-import { isExpressionWithTypeArguments } from 'typescript';
 
 interface UserPayload {
   id: string;
